@@ -20,5 +20,7 @@
             "name": "Gustavo Straube",
             "email": "gustavo@creativeduo.com.br"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
