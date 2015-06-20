@@ -1,0 +1,24 @@
+{
+    "name": "creativeduo/thin",
+    "description": "A simple foundation project for Slim Framework based web applications",
+    "type": "project",
+    "require": {
+        "slim/slim": "^2.6",
+        "slim/views": "0.1.*",
+        "twig/twig": "~1.18",
+        "illuminate/database": "~5.0",
+        "illuminate/pagination": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gustavo Straube",
+            "email": "gustavo@creativeduo.com.br"
+        }
+    ]
+}

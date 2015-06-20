@@ -1,0 +1,6 @@
+# composer packages
+/vendor/
+composer.lock
+
+# project specific
+/data/
