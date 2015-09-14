@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{% block title %}Thin{% endblock %}</title>
+        <meta name="description" content="{% block description %}Thin is a simple foundation project for Slim Framework based web applications.{% endblock %}">
+
+        {# Facebook Open Graph Tags #}
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:url" content="{# [page-url] #}">
+        <meta property="og:site_name" content="Thin">
+        <meta property="og:title" content="{{ block('title') }}">
+        <meta property="og:description" content="{{ block('description') }}">
+        <meta property="og:image" content="{#% block imageOpenGraph %} [image-url] {% endblock %#}" />
+
+        {# ADITIONAL METATAGS #}
+        {% block metatags %}{% endblock %}
+
+        {# SITE STYLES BLOCK #}
+        {% block styles %}
+            <link href="/assets/stylesheets/app.css" rel="stylesheet">
+        {% endblock %}
+
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+        <div id="wrapper">
+            {# SITE HEADER BLOCK #}
+            {% block header %}
+                {% include 'main/includes/header.html.twig' %}
+            {% endblock %}
+
+            {# SITE CONTENT BLOCK #}
+            {% block container %}{% endblock %}
+
+            {# SITE FOOTER BLOCK #}
+            {% block footer %}
+                {% include 'main/includes/footer.html.twig' %}
+            {% endblock %}
+        </div>
+
+        {# SITE SCRIPTS BLOCK #}
+        {% block scripts %}
+            <script src="/assets/javascripts/app.js"></script>
+        {% endblock %}    
+    </body>
+</html>

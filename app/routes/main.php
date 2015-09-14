@@ -15,5 +15,5 @@
  * Method: GET
  */
 $app->get('/', function () use ($app) {
-    $app->render('main/index.twig');
+    $app->render('main/index.html.twig');
 })->name('main.index');
